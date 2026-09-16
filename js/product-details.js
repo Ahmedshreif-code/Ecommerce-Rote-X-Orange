@@ -2,9 +2,7 @@ const productDetailsContainer =
     document.getElementById("product-details");
 
 
-// ===============================
 // Get Product ID From URL
-// ===============================
 
 const params = new URLSearchParams(window.location.search);
 
@@ -583,13 +581,9 @@ function displayRelatedProducts(products) {
 
 
     container.innerHTML = products.map(product => `
+    <div class="col-12 col-md-4 col-lg-3">
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg">
-
-      <a
-        href="product-details.html?id=${product._id}"
-        class="text-decoration-none text-dark"
-      >
+      
 
         <div class="card related-card h-100 border-0 shadow-sm">
 
@@ -604,10 +598,15 @@ function displayRelatedProducts(products) {
             <small class="text-muted">
               ${product.category.name}
             </small>
-
+<a
+        href="product-details.html?id=${product._id}"
+        class="text-decoration-none text-dark"
+      >
             <h6 class="mt-2">
               ${product.title}
             </h6>
+      </a>
+
 
             <div class="text-warning small">
 
@@ -623,9 +622,9 @@ function displayRelatedProducts(products) {
 
         </div>
 
-      </a>
 
     </div>
+
 
   `).join("");
 

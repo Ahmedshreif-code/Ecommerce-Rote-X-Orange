@@ -4,18 +4,14 @@ body {
 }
 
 
-/* =========================
-   Breadcrumb
-========================= */
+/* Breadcrumb */
 
 .breadcrumb-item+.breadcrumb-item::before {
     color: #adb5bd;
 }
 
 
-/* =========================
-   Product Gallery
-========================= */
+/* Product Gallery */
 
 .product-gallery {
     border: 1px solid #e9ecef;
@@ -67,9 +63,7 @@ body {
 }
 
 
-/* =========================
-   Product Content
-========================= */
+/* Product Content */
 
 .product-content {
     border: 1px solid #e9ecef;
@@ -139,9 +133,7 @@ body {
 }
 
 
-/* =========================
-   Quantity
-========================= */
+/* Quantity */
 
 .quantity-section {
     display: flex;
@@ -175,9 +167,7 @@ body {
 }
 
 
-/* =========================
-   Total
-========================= */
+/* Total */
 
 .total-price {
     background: #f8f9fa;
@@ -193,9 +183,7 @@ body {
 }
 
 
-/* =========================
-   Buttons
-========================= */
+/* Buttons */
 
 .action-buttons {
     display: flex;
@@ -218,9 +206,7 @@ body {
 }
 
 
-/* =========================
-   Delivery Features
-========================= */
+/* Delivery Features */
 
 .delivery-features {
     display: grid;
@@ -256,9 +242,7 @@ body {
 }
 
 
-/* =========================
-   Product Information
-========================= */
+/* Product Information */
 
 .product-info-section {
     border: 1px solid #e9ecef;
@@ -306,9 +290,7 @@ body {
 }
 
 
-/* =========================
-   Reviews
-========================= */
+/* Reviews */
 
 .review-item {
     padding: 20px 0;
@@ -316,9 +298,7 @@ body {
 }
 
 
-/* =========================
-   Related Products
-========================= */
+/* Related Products */
 
 .section-title {
     border-left: 4px solid #198754;
