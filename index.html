@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh cart</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Fresh cart</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form
+            class="d-flex justify-content-center align-items-center w-50"
+            role="search"
+          >
+            <input
+              class="form-control me-2 rounded-pill"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success rounded-circle"
+              type="submit"
+            >
+              <i class="fa-solid fa-magnifying-glass fa-canvas-roomy"></i>
+            </button>
+          </form>
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                category
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">Brands</a>
+            </li>
+          </ul>
+          <div
+            class="support-links d-flex justify-content-between align-items-center gap-2"
+          >
+            <div
+              class="support d-flex align-items-center gap-2 border-end border-1 border-dark px-3"
+            >
+              <i
+                class="fa-solid fa-headset fa-canvas-roomy bg-success-subtle text-success rounded-3"
+              ></i>
+              <div class="content">
+                <p class="m-0">support</p>
+                <span>24/7 help</span>
+              </div>
+            </div>
+            <i class="fa-regular fa-heart"></i>
+            <a href="card.html" class="text-dark text-decoration-none">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <i class="fa-solid fa-id-card"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="d-flex align-items-center">
+      <div class="container text-white">
+        <h2>Fresh Products Deliverd</h2>
+        <h2>To your Door</h2>
+        <p>Get 20% off your first order</p>
+        <div class="btns">
+          <button class="btn bg-white text-success">Shop Now</button>
+          <button class="btn text-white border-white">Shop Now</button>
+        </div>
+      </div>
+    </header>
+    <section class="py-3 bg-body-secondary">
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-12 col-lg-3">
+            <div
+              class="bg-body shadow rounded-3 d-flex align-items-center p-3 flex-nowrap gap-2"
+            >
+              <i
+                class="fa-solid fa-truck bg-danger-subtle text-primary fa-canvas-roomy rounded-circle p-2"
+              ></i>
+              <div class="content">
+                <p class="m-0">Free shipping</p>
+                <span>on order over 500Egp</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div
+              class="bg-body shadow rounded-3 d-flex align-items-center p-3 flex-nowrap gap-2"
+            >
+              <i
+                class="fa-solid fa-shield bg-success-subtle text-success fa-canvas-roomy rounded-circle p-2"
+              ></i>
+              <div class="content">
+                <p class="m-0">secure payment</p>
+                <span>on order over 500Egp</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div
+              class="bg-body shadow rounded-3 d-flex align-items-center p-3 flex-nowrap gap-2"
+            >
+              <i
+                class="fa-solid fa-rotate-left bg-body-tertiary text-warning fa-canvas-roomy rounded-circle p-2"
+              ></i>
+              <div class="content">
+                <p class="m-0">Easy return</p>
+                <span>on order over 500Egp</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div
+              class="bg-body shadow rounded-3 d-flex align-items-center p-3 flex-nowrap gap-2"
+            >
+              <i
+                class="fa-solid fa-headphones bg-body-tertiary text-purple fa-canvas-roomy rounded-circle p-2"
+              ></i>
+              <div class="content">
+                <p class="m-0">Free shipping</p>
+                <span>on order over 500Egp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-3">
+      <div class="container">
+        <div class="title d-flex justify-content-between align-items-center">
+          <h2 class="border-start border-5 ps-3 border-success m-0">
+            shop by <span class="h2 text-success">category</span>
+          </h2>
+          <p class="m-0 text-success">
+            view all category <i class="fa-solid fa-arrow-right"></i>
+          </p>
+        </div>
+        <div class="row g-3 mt-2" id="categories-container"></div>
+      </div>
+    </section>
+    <section class="py-3">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-12 col-lg-6">
+            <div class="rounded-3 p-3 bg-success bg-gradient">
+              <p
+                class="m-0 bg-success-subtle text-white rounded-pill d-inline-block p-1"
+              >
+                Lorem, ipsum dolor.
+              </p>
+              <h2 class="text-white">Fresh organic frutes</h2>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+              </p>
+              <h2 class="text-white">
+                40% off <span class="h6">use code</span>
+                <span class="fw-bolder h5">ahmed40</span>
+              </h2>
+              <button class="btn rounded-pill bg-white text-success">
+                Shop Now <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="rounded-3 p-3 bg-danger bg-gradient">
+              <p
+                class="m-0 bg-danger-subtle text-white rounded-pill d-inline-block p-1"
+              >
+                Lorem, ipsum dolor.
+              </p>
+              <h2 class="text-white">Fresh organic frutes</h2>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+              </p>
+              <h2 class="text-white">
+                40% off <span class="h6">use code</span>
+                <span class="fw-bolder h5">ahmed40</span>
+              </h2>
+              <button class="btn rounded-pill bg-white text-danger">
+                Shop Now <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-3">
+      <div class="container">
+        <h2 class="border-start border-5 ps-3 border-success m-0">
+          Featured <span class="h2 text-success">Products</span>
+        </h2>
+        <div class="row g-3" id="products-container"></div>
+      </div>
+    </section>
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-3">
+      <div class="container">
+        <div class="newsletter-box p-4 p-lg-5">
+          <div class="row align-items-center g-5">
+            <!-- Left Side -->
+            <div class="col-lg-7">
+              <!-- Newsletter Header -->
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="newsletter-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div>
+                  <h6 class="text-success fw-bold mb-1">NEWSLETTER</h6>
+                  <p class="mb-0 text-secondary">50,000+ subscribers</p>
+                </div>
+              </div>
+
+              <!-- Title -->
+              <h2 class="newsletter-title fw-bold">
+                Get the Freshest Updates
+                <span>Delivered Free</span>
+              </h2>
+
+              <p class="newsletter-desc">
+                Weekly recipes, seasonal offers & exclusive member perks.
+              </p>
+
+              <!-- Features -->
+              <div class="d-flex flex-wrap gap-3 mb-4">
+                <div class="feature-item">
+                  <span>
+                    <i class="fa-solid fa-leaf"></i>
+                  </span>
+                  Fresh Picks Weekly
+                </div>
+
+                <div class="feature-item">
+                  <span>
+                    <i class="fa-solid fa-truck"></i>
+                  </span>
+                  Free Delivery Codes
+                </div>
+
+                <div class="feature-item">
+                  <span>
+                    <i class="fa-solid fa-tag"></i>
+                  </span>
+                  Members-Only Deals
+                </div>
+              </div>
+
+              <!-- Form -->
+              <form class="subscribe-form d-flex gap-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="you@example.com"
+                />
+
+                <button type="submit" class="subscribe-btn">
+                  Subscribe
+                  <i class="fa-solid fa-arrow-right ms-2"></i>
+                </button>
+              </form>
+
+              <p class="unsubscribe-text mt-3">
+                ✨ Unsubscribe anytime. No spam, ever.
+              </p>
+            </div>
+
+            <!-- Divider -->
+            <div class="col-lg-1 d-none d-lg-block">
+              <div class="newsletter-divider"></div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="col-lg-4">
+              <div class="app-card">
+                <div class="app-badge mb-4">
+                  <i class="fa-solid fa-mobile-screen-button me-2"></i>
+                  MOBILE APP
+                </div>
+
+                <h3>Shop Faster on Our App</h3>
+
+                <p>Get app-exclusive deals & 15% off your first order.</p>
+
+                <!-- App Store -->
+                <div class="store-btn">
+                  <i class="fa-brands fa-apple"></i>
+
+                  <div>
+                    <small>DOWNLOAD ON</small>
+                    <strong>App Store</strong>
+                  </div>
+                </div>
+
+                <!-- Google Play -->
+                <div class="store-btn">
+                  <i class="fa-brands fa-google-play"></i>
+
+                  <div>
+                    <small>GET IT ON</small>
+                    <strong>Google Play</strong>
+                  </div>
+                </div>
+
+                <!-- Rating -->
+                <div class="rating mt-4">
+                  <span>★★★★★</span>
+                  <small>4.9 · 100K+ downloads</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row footer-main">
+          <!-- Brand / Contact -->
+          <div class="col-lg-4 col-md-12 footer-brand">
+            <a href="#" class="footer-logo">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>FreshCart</span>
+            </a>
+
+            <p class="footer-description">
+              FreshCart is your one-stop destination for quality products. From
+              fashion to electronics, we bring you the best brands at
+              competitive prices with a seamless shopping experience.
+            </p>
+
+            <ul class="footer-contact list-unstyled">
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>+1 (800) 123-4567</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>support@freshcart.com</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>123 Commerce Street, New York, NY 10001</span>
+              </li>
+            </ul>
+
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a href="#" aria-label="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+
+              <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Shop -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h3 class="footer-title">Shop</h3>
+
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">All Products</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Brands</a></li>
+              <li><a href="#">Electronics</a></li>
+              <li><a href="#">Men's Fashion</a></li>
+              <li><a href="#">Women's Fashion</a></li>
+            </ul>
+          </div>
+
+          <!-- Account -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h3 class="footer-title">Account</h3>
+
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Order History</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Shopping Cart</a></li>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">Create Account</a></li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h3 class="footer-title">Support</h3>
+
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Shipping Info</a></li>
+              <li><a href="#">Returns &amp; Refunds</a></li>
+              <li><a href="#">Track Order</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h3 class="footer-title">Legal</h3>
+
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <p class="copyright mb-0">
+                © 2026 FreshCart. All rights reserved.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="payment-methods">
+                <span>
+                  <i class="fa-solid fa-credit-card"></i>
+                  Visa
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-credit-card"></i>
+                  Mastercard
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-credit-card"></i>
+                  PayPal
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+<!-- 
+defer
+async 
+-->

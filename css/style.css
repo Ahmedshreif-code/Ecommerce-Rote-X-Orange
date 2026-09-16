@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+i,
+h1,
+span,
+a {
+    display: inline-block;
+}
+
+
+
+/*////////////////////////////////////////////////// header//////////////////////////////////////////////////////////////////////// */
+.text-purple {
+    color: purple;
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 128, 0, 0.464)), url(../images/Grocery1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.newsletter-section {
+    background-color: #fff;
+}
+
+/* Main Box */
+.newsletter-box {
+    background: linear-gradient(110deg,
+            #ffffff 0%,
+            #ffffff 65%,
+            #fffafa 100%);
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 190, 140, 0.25),
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Newsletter Icon */
+.newsletter-icon {
+    width: 74px;
+    height: 74px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(135deg,
+            #00bd91,
+            #00a97d);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 28px;
+
+    box-shadow: 0 12px 25px rgba(0, 190, 145, 0.25);
+}
+
+/* Title */
+.newsletter-title {
+    color: #111a2d;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.newsletter-title span {
+    color: #009f75;
+}
+
+.newsletter-desc {
+    color: #70798b;
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+/* Features */
+.feature-item {
+
+    padding: 10px 20px;
+
+    border: 1px solid #c8f4e5;
+    border-radius: 35px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #354157;
+    background-color: #fff;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+}
+
+.feature-item span {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d4f8eb;
+    color: #00a879;
+}
+
+/* Subscribe Form */
+.subscribe-form {
+    max-width: 850px;
+}
+
+.subscribe-form .form-control {
+
+    border: 2px solid #e1e4e8;
+    border-radius: 20px;
+
+    padding: 10px 28px;
+
+    font-size: 18px;
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.06);
+}
+
+.subscribe-form .form-control:focus {
+    border-color: #00b889;
+    box-shadow: 0 0 0 4px rgba(0, 184, 137, 0.1);
+}
+
+.subscribe-btn {
+
+    padding: 10px 40px;
+
+    border: 0;
+    border-radius: 20px;
+
+    background: linear-gradient(135deg,
+            #00b889,
+            #00a97c);
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    box-shadow: 0 12px 25px rgba(0, 180, 135, 0.25);
+
+    transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0, 180, 135, 0.35);
+}
+
+.unsubscribe-text {
+    color: #8993a5;
+    font-size: 14px;
+}
+
+/* Divider */
+.newsletter-divider {
+    width: 1px;
+    height: 100%;
+
+    min-height: 510px;
+
+    background-color: #c8f1e5;
+}
+
+/* App Card */
+.app-card {
+    position: relative;
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    background:
+        radial-gradient(circle at 90% 10%,
+            rgba(0, 190, 150, 0.25),
+            transparent 35%),
+        #141e30;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+.app-card h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.app-card>p {
+    color: #9da6b7;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+/* Mobile App Badge */
+.app-badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 8px 17px;
+
+    border-radius: 30px;
+
+    color: #00d3a0;
+
+    background-color: rgba(0, 180, 140, 0.12);
+
+    border: 1px solid rgba(0, 210, 160, 0.4);
+
+    font-size: 14px;
+}
+
+/* Store Buttons */
+.store-btn {
+
+    margin-bottom: 15px;
+
+    padding: 5px 15px;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background-color: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    transition: 0.3s;
+}
+
+.store-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.store-btn>i {
+    font-size: 28px;
+}
+
+.store-btn div {
+    display: flex;
+    flex-direction: column;
+}
+
+.store-btn small {
+    color: #a3acbc;
+    font-size: 11px;
+}
+
+.store-btn strong {
+    font-size: 17px;
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rating span {
+    color: #ffc400;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.rating small {
+    color: #929caf;
+    font-size: 15px;
+}
+
+
+
+/* =========================================
+   FreshCart Footer
+========================================= */
+
+.site-footer {
+    --footer-bg: #0d1728;
+    --footer-border: #1d293b;
+    --footer-heading: #ffffff;
+    --footer-text: #9ca6b8;
+    --footer-muted: #707b8f;
+    --footer-accent: #12c951;
+    --social-bg: #1b293d;
+
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+}
+
+
+/* =========================================
+   Main Footer
+========================================= */
+
+.footer-main {
+    padding: 50px 0;
+}
+
+
+/* =========================================
+   Logo
+========================================= */
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 8px 18px;
+
+    background-color: #ffffff;
+    border-radius: 8px;
+
+    color: #263746;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+
+    margin-bottom: 32px;
+
+    transition: opacity 0.2s ease;
+}
+
+.footer-logo:hover {
+    opacity: 0.92;
+}
+
+.footer-logo i {
+    color: var(--footer-accent);
+    font-size: 25px;
+}
+
+
+/* =========================================
+   Description
+========================================= */
+
+.footer-description {
+    max-width: 470px;
+
+    margin-bottom: 26px;
+
+    color: var(--footer-text);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   Contact Information
+========================================= */
+
+.footer-contact {
+    margin: 0;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-bottom: 15px;
+
+    color: var(--footer-text);
+    font-size: 14px;
+}
+
+.footer-contact li i {
+    width: 16px;
+
+    color: var(--footer-accent);
+    font-size: 15px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   Social Links
+========================================= */
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 43px;
+    height: 43px;
+
+    background-color: var(--social-bg);
+    border-radius: 50%;
+
+    color: var(--footer-text);
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-social a:hover {
+    background-color: var(--footer-accent);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   Footer Navigation
+========================================= */
+
+.footer-title {
+    margin: 5px 0 27px;
+
+    color: var(--footer-heading);
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-links {
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 18px;
+}
+
+.footer-links a {
+    display: inline-block;
+
+    color: var(--footer-text);
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--footer-accent);
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   Footer Bottom
+========================================= */
+
+.footer-bottom {
+    border-top: 1px solid var(--footer-border);
+
+    padding: 27px 0;
+}
+
+.copyright {
+    color: var(--footer-muted);
+    font-size: 14px;
+}
+
+
+/* =========================================
+   Payment Methods
+========================================= */
+
+.payment-methods {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.payment-methods span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--footer-muted);
+    font-size: 14px;
+}
+
+.payment-methods i {
+    font-size: 15px;
+}
+
+
+/* ////////////////////media query///////////////////////// */
+/* sm */
+@media screen and (min-width: 640px) {}
+
+/* md */
+@media screen and (min-width: 768px) {
+    .newsletter-box {
+        padding: 30px !important;
+    }
+
+    .newsletter-title {
+        font-size: 32px;
+    }
+
+    .newsletter-desc {
+        font-size: 18px;
+    }
+
+    .feature-item {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+    }
+
+    .app-card {
+        padding: 30px;
+    }
+
+}
+
+/* 1g */
+@media screen and (min-width: 1024px) {}
+
+/* x1 */
+@media screen and (min-width: 1280px) {}
+
+/* xx1 */
+@media screen and (min-width: 1536px) {}

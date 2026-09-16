@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh cart</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Fresh cart</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form
+            class="d-flex justify-content-center align-items-center w-50"
+            role="search"
+          >
+            <input
+              class="form-control me-2 rounded-pill"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success rounded-circle"
+              type="submit"
+            >
+              <i class="fa-solid fa-magnifying-glass fa-canvas-roomy"></i>
+            </button>
+          </form>
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                category
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">Brands</a>
+            </li>
+          </ul>
+          <div
+            class="support-links d-flex justify-content-between align-items-center gap-2"
+          >
+            <div
+              class="support d-flex align-items-center gap-2 border-end border-1 border-dark px-3"
+            >
+              <i
+                class="fa-solid fa-headset fa-canvas-roomy bg-success-subtle text-success rounded-3"
+              ></i>
+              <div class="content">
+                <p class="m-0">support</p>
+                <span>24/7 help</span>
+              </div>
+            </div>
+            <i class="fa-regular fa-heart"></i>
+            <a href="card.html" class="text-dark text-decoration-none">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <i class="fa-solid fa-id-card"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="cart-page">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb-wrapper">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Shopping Cart</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1 class="page-title">
+          <span class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </span>
+          Shopping Cart
+        </h1>
+        <p class="cart-count-text">
+          You have <span>4 items</span> in your cart
+        </p>
+      </div>
+      <div class="row g-4">
+        <!-- ========================= CART ITEMS ========================== -->
+        <div class="col-lg-8">
+          <!-- Item 1 -->
+          <div class="cart-item">
+            <div class="product-image-wrapper">
+              <img
+                src="images/meal1.jpg"
+                class="product-image"
+                alt="Woman Shawl"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-name">Woman Shawl</div>
+              <div class="product-meta">
+                <span class="category"> Women's Fashion </span>
+                <span class="meta-dot"></span> <span> SKU: 5CA0AD </span>
+              </div>
+              <div class="price-row">
+                <span class="price">149 EGP</span>
+                <span class="per-unit">per unit</span>
+              </div>
+              <span class="stock-badge">
+                <i class="fa-solid fa-check"></i> In Stock
+              </span>
+            </div>
+            <div class="item-actions">
+              <div class="quantity-box">
+                <button class="quantity-btn">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <span class="quantity-number">2</span>
+                <button class="quantity-btn plus">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-total">
+              <span class="total-label"> Total </span>
+              <span class="total-price">298</span>
+              <span class="currency">EGP</span>
+            </div>
+            <button class="delete-btn">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </div>
+          <!-- Item 2 -->
+          <div class="cart-item">
+            <div class="product-image-wrapper">
+              <img
+                src="images/meal1.jpg"
+                class="product-image"
+                alt="Woman Standard Fit Knitted Cardigan"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-name">
+                Woman Standard Fit Knitted Cardigan
+              </div>
+              <div class="product-meta">
+                <span class="category"> Women's Fashion </span>
+                <span class="meta-dot"></span> <span> SKU: 5CA084 </span>
+              </div>
+              <div class="price-row">
+                <span class="price">499 EGP</span>
+                <span class="per-unit">per unit</span>
+              </div>
+              <span class="stock-badge">
+                <i class="fa-solid fa-check"></i> In Stock
+              </span>
+            </div>
+            <div class="item-actions">
+              <div class="quantity-box">
+                <button class="quantity-btn">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <span class="quantity-number">1</span>
+                <button class="quantity-btn plus">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-total">
+              <span class="total-label">Total</span>
+              <span class="total-price">499</span>
+              <span class="currency">EGP</span>
+            </div>
+            <button class="delete-btn">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </div>
+          <!-- Item 3 -->
+          <div class="cart-item">
+            <div class="product-image-wrapper">
+              <img
+                src="images/meal1.jpg"
+                class="product-image"
+                alt="Woman Shawl"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-name">Woman Shawl</div>
+              <div class="product-meta">
+                <span class="category"> Women's Fashion </span>
+                <span class="meta-dot"></span> <span> SKU: 5CA096 </span>
+              </div>
+              <div class="price-row">
+                <span class="price">349 EGP</span>
+                <span class="per-unit">per unit</span>
+              </div>
+              <span class="stock-badge">
+                <i class="fa-solid fa-check"></i> In Stock
+              </span>
+            </div>
+            <div class="item-actions">
+              <div class="quantity-box">
+                <button class="quantity-btn">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <span class="quantity-number">2</span>
+                <button class="quantity-btn plus">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-total">
+              <span class="total-label">Total</span>
+              <span class="total-price">698</span>
+              <span class="currency">EGP</span>
+            </div>
+            <button class="delete-btn">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </div>
+          <!-- Item 4 -->
+          <div class="cart-item">
+            <div class="product-image-wrapper">
+              <img
+                src="images/meal1.jpg"
+                class="product-image"
+                alt="Woman Bordeaux Long Sleeve Blouse"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-name">
+                Woman Bordeaux Long Sleeve Blouse BORDEAUX
+              </div>
+              <div class="product-meta">
+                <span class="category"> Women's Fashion </span>
+                <span class="meta-dot"></span> <span> SKU: 5CA090 </span>
+              </div>
+              <div class="price-row">
+                <span class="price">499 EGP</span>
+                <span class="per-unit">per unit</span>
+              </div>
+              <span class="stock-badge">
+                <i class="fa-solid fa-check"></i> In Stock
+              </span>
+            </div>
+            <div class="item-actions">
+              <div class="quantity-box">
+                <button class="quantity-btn">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <span class="quantity-number">1</span>
+                <button class="quantity-btn plus">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="item-total">
+              <span class="total-label">Total</span>
+              <span class="total-price">499</span>
+              <span class="currency">EGP</span>
+            </div>
+            <button class="delete-btn">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </div>
+          <!-- Bottom Actions -->
+          <div class="bottom-actions">
+            <a href="#" class="continue-shopping">
+              <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+            </a>
+            <a href="#" class="clear-items">
+              <i class="fa-solid fa-trash-can"></i> Clear all items
+            </a>
+          </div>
+        </div>
+        <!-- ========================= ORDER SUMMARY ========================== -->
+        <div class="col-lg-4">
+          <div class="summary-card">
+            <!-- Summary Header -->
+            <div class="summary-header">
+              <h2 class="summary-title">
+                <i class="fa-solid fa-bag-shopping"></i> Order Summary
+              </h2>
+              <p class="summary-items">4 items in your cart</p>
+            </div>
+            <div class="summary-body">
+              <!-- Free Shipping -->
+              <div class="free-shipping">
+                <div class="shipping-icon">
+                  <i class="fa-solid fa-truck"></i>
+                </div>
+                <div>
+                  <div class="shipping-title">Free Shipping!</div>
+                  <div class="shipping-text">You qualify for free delivery</div>
+                </div>
+              </div>
+              <!-- Subtotal -->
+              <div class="summary-row">
+                <span class="label"> Subtotal </span>
+                <span class="value"> 1,994 EGP </span>
+              </div>
+              <!-- Shipping -->
+              <div class="summary-row shipping">
+                <span class="label"> Shipping </span>
+                <span class="value"> FREE </span>
+              </div>
+              <hr class="summary-divider" />
+              <!-- Total -->
+              <div class="grand-total">
+                <span class="label"> Total </span>
+                <div>
+                  <span class="amount"> 1,994 </span>
+                  <span class="currency"> EGP </span>
+                </div>
+              </div>
+              <!-- Promo -->
+              <button class="promo-btn">
+                <i class="fa-solid fa-tag"></i> Apply Promo Code
+              </button>
+              <!-- Checkout -->
+              <button class="checkout-btn">
+                <i class="fa-solid fa-lock"></i> Secure Checkout
+              </button>
+              <!-- Security -->
+              <div class="security-info">
+                <span>
+                  <i class="fa-solid fa-shield-halved"></i> Secure Payment
+                </span>
+                <span class="delivery">
+                  <i class="fa-solid fa-truck-fast"></i> Fast Delivery
+                </span>
+              </div>
+              <!-- Continue -->
+              <a href="#" class="continue-shopping">
+                <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row footer-main">
+          <!-- Brand / Contact -->
+          <div class="col-lg-4 col-md-12 footer-brand">
+            <a href="#" class="footer-logo">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>FreshCart</span>
+            </a>
+
+            <p class="footer-description">
+              FreshCart is your one-stop destination for quality products. From
+              fashion to electronics, we bring you the best brands at
+              competitive prices with a seamless shopping experience.
+            </p>
+
+            <ul class="footer-contact list-unstyled">
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>+1 (800) 123-4567</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>support@freshcart.com</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>123 Commerce Street, New York, NY 10001</span>
+              </li>
+            </ul>
+
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a href="#" aria-label="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+
+              <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Shop -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h3 class="footer-title">Shop</h3>
+
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">All Products</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Brands</a></li>
+              <li><a href="#">Electronics</a></li>
+              <li><a href="#">Men's Fashion</a></li>
+              <li><a href="#">Women's Fashion</a></li>
+            </ul>
+          </div>
+
+          <!-- Account -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h3 class="footer-title">Account</h3>
+
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Order History</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Shopping Cart</a></li>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">Create Account</a></li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h3 class="footer-title">Support</h3>
+
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Shipping Info</a></li>
+              <li><a href="#">Returns &amp; Refunds</a></li>
+              <li><a href="#">Track Order</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <h3 class="footer-title">Legal</h3>
+
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <p class="copyright mb-0">
+                © 2026 FreshCart. All rights reserved.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="payment-methods">
+                <span>
+                  <i class="fa-solid fa-credit-card"></i>
+                  Visa
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-credit-card"></i>
+                  Mastercard
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-credit-card"></i>
+                  PayPal
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
