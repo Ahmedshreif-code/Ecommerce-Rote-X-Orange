@@ -33,7 +33,7 @@
 
 ## 🔎 Overview
 
-**Ecommerce — Route x Orange** is a minimal, front-end-only online store built as part of the **Route x Orange** program. It fetches live product data from the **Route Academy E-commerce API**, renders it on a home page, lets users add products to their cart, and provides a dedicated cart page to review the selected items.
+**Ecommerce — Route x Orange** is a minimal, front-end-only online store built as part of the **Route x Orange** program. It fetches live product data from the **Route Academy E-commerce API**, renders it on a home page, provides a product details page, lets users add products to their cart, and includes a dedicated cart page to review the selected items.
 
 The project focuses on delivering a working core flow quickly, rather than a full-featured store.
 
@@ -57,9 +57,9 @@ This project was built in **approximately 2 hours** using **AI-assisted developm
 | Feature | Status |
 |---|---|
 | Home page with products fetched from the API | ✅ Implemented |
+| Product details page | ✅ Implemented |
 | Add product to cart | ✅ Implemented |
 | Cart page | ✅ Implemented |
-| Product details page | 🚧 Planned |
 | Authentication | 🚧 Planned |
 | Checkout | 🚧 Planned |
 
@@ -70,10 +70,11 @@ This project was built in **approximately 2 hours** using **AI-assisted developm
 To keep the delivery fast and focused, this version covers **only**:
 
 1. **Home page** — product listing powered by the API
-2. **Add product to cart** — core cart interaction
-3. **Cart page** — review the products added to the cart
+2. **Product details page** — detailed view of a single product
+3. **Add product to cart** — core cart interaction
+4. **Cart page** — review the products added to the cart
 
-`product-details.html` exists in the repository as a starter file but is **not part of the completed scope**.
+Features such as authentication and checkout are **out of scope** for this version.
 
 ---
 
@@ -105,7 +106,7 @@ Ecommerce-Rote-X-Orange/
 ├── webfonts/               # Icon fonts
 ├── index.html              # Home page — product listing
 ├── card.html               # Cart page
-└── product-details.html    # Product details page (starter, not completed)
+└── product-details.html    # Product details page
 ```
 
 ---
@@ -136,7 +137,6 @@ Open `index.html` directly in your browser, or right-click it in VS Code and cho
 
 ## 🗺 Roadmap
 
-- [ ] Build the product details page
 - [ ] Add search and category filtering
 - [ ] Implement user authentication
 - [ ] Add a checkout flow
