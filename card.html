@@ -15,7 +15,7 @@
   <body>
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Fresh cart</a>
+        <a class="navbar-brand" href="index.html">Nest Mart</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -108,7 +108,7 @@
       <div class="breadcrumb-wrapper">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item active">Shopping Cart</li>
           </ol>
         </nav>
@@ -121,195 +121,20 @@
           </span>
           Shopping Cart
         </h1>
-        <p class="cart-count-text">
-          You have <span>4 items</span> in your cart
+        <p class="cart-count-text" id="cart-count-text">
+          You have <span>0 items</span> in your cart
         </p>
       </div>
       <div class="row g-4">
         <!-- ========================= CART ITEMS ========================== -->
         <div class="col-lg-8">
-          <!-- Item 1 -->
-          <div class="cart-item">
-            <div class="product-image-wrapper">
-              <img
-                src="images/meal1.jpg"
-                class="product-image"
-                alt="Woman Shawl"
-              />
-            </div>
-            <div class="product-info">
-              <div class="product-name">Woman Shawl</div>
-              <div class="product-meta">
-                <span class="category"> Women's Fashion </span>
-                <span class="meta-dot"></span> <span> SKU: 5CA0AD </span>
-              </div>
-              <div class="price-row">
-                <span class="price">149 EGP</span>
-                <span class="per-unit">per unit</span>
-              </div>
-              <span class="stock-badge">
-                <i class="fa-solid fa-check"></i> In Stock
-              </span>
-            </div>
-            <div class="item-actions">
-              <div class="quantity-box">
-                <button class="quantity-btn">
-                  <i class="fa-solid fa-minus"></i>
-                </button>
-                <span class="quantity-number">2</span>
-                <button class="quantity-btn plus">
-                  <i class="fa-solid fa-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="item-total">
-              <span class="total-label"> Total </span>
-              <span class="total-price">298</span>
-              <span class="currency">EGP</span>
-            </div>
-            <button class="delete-btn">
-              <i class="fa-regular fa-trash-can"></i>
-            </button>
-          </div>
-          <!-- Item 2 -->
-          <div class="cart-item">
-            <div class="product-image-wrapper">
-              <img
-                src="images/meal1.jpg"
-                class="product-image"
-                alt="Woman Standard Fit Knitted Cardigan"
-              />
-            </div>
-            <div class="product-info">
-              <div class="product-name">
-                Woman Standard Fit Knitted Cardigan
-              </div>
-              <div class="product-meta">
-                <span class="category"> Women's Fashion </span>
-                <span class="meta-dot"></span> <span> SKU: 5CA084 </span>
-              </div>
-              <div class="price-row">
-                <span class="price">499 EGP</span>
-                <span class="per-unit">per unit</span>
-              </div>
-              <span class="stock-badge">
-                <i class="fa-solid fa-check"></i> In Stock
-              </span>
-            </div>
-            <div class="item-actions">
-              <div class="quantity-box">
-                <button class="quantity-btn">
-                  <i class="fa-solid fa-minus"></i>
-                </button>
-                <span class="quantity-number">1</span>
-                <button class="quantity-btn plus">
-                  <i class="fa-solid fa-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="item-total">
-              <span class="total-label">Total</span>
-              <span class="total-price">499</span>
-              <span class="currency">EGP</span>
-            </div>
-            <button class="delete-btn">
-              <i class="fa-regular fa-trash-can"></i>
-            </button>
-          </div>
-          <!-- Item 3 -->
-          <div class="cart-item">
-            <div class="product-image-wrapper">
-              <img
-                src="images/meal1.jpg"
-                class="product-image"
-                alt="Woman Shawl"
-              />
-            </div>
-            <div class="product-info">
-              <div class="product-name">Woman Shawl</div>
-              <div class="product-meta">
-                <span class="category"> Women's Fashion </span>
-                <span class="meta-dot"></span> <span> SKU: 5CA096 </span>
-              </div>
-              <div class="price-row">
-                <span class="price">349 EGP</span>
-                <span class="per-unit">per unit</span>
-              </div>
-              <span class="stock-badge">
-                <i class="fa-solid fa-check"></i> In Stock
-              </span>
-            </div>
-            <div class="item-actions">
-              <div class="quantity-box">
-                <button class="quantity-btn">
-                  <i class="fa-solid fa-minus"></i>
-                </button>
-                <span class="quantity-number">2</span>
-                <button class="quantity-btn plus">
-                  <i class="fa-solid fa-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="item-total">
-              <span class="total-label">Total</span>
-              <span class="total-price">698</span>
-              <span class="currency">EGP</span>
-            </div>
-            <button class="delete-btn">
-              <i class="fa-regular fa-trash-can"></i>
-            </button>
-          </div>
-          <!-- Item 4 -->
-          <div class="cart-item">
-            <div class="product-image-wrapper">
-              <img
-                src="images/meal1.jpg"
-                class="product-image"
-                alt="Woman Bordeaux Long Sleeve Blouse"
-              />
-            </div>
-            <div class="product-info">
-              <div class="product-name">
-                Woman Bordeaux Long Sleeve Blouse BORDEAUX
-              </div>
-              <div class="product-meta">
-                <span class="category"> Women's Fashion </span>
-                <span class="meta-dot"></span> <span> SKU: 5CA090 </span>
-              </div>
-              <div class="price-row">
-                <span class="price">499 EGP</span>
-                <span class="per-unit">per unit</span>
-              </div>
-              <span class="stock-badge">
-                <i class="fa-solid fa-check"></i> In Stock
-              </span>
-            </div>
-            <div class="item-actions">
-              <div class="quantity-box">
-                <button class="quantity-btn">
-                  <i class="fa-solid fa-minus"></i>
-                </button>
-                <span class="quantity-number">1</span>
-                <button class="quantity-btn plus">
-                  <i class="fa-solid fa-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="item-total">
-              <span class="total-label">Total</span>
-              <span class="total-price">499</span>
-              <span class="currency">EGP</span>
-            </div>
-            <button class="delete-btn">
-              <i class="fa-regular fa-trash-can"></i>
-            </button>
-          </div>
+          <div id="cart-items"></div>
           <!-- Bottom Actions -->
-          <div class="bottom-actions">
-            <a href="#" class="continue-shopping">
+          <div class="bottom-actions" id="cart-bottom-actions">
+            <a href="index.html" class="continue-shopping">
               <i class="fa-solid fa-arrow-left"></i> Continue Shopping
             </a>
-            <a href="#" class="clear-items">
+            <a href="#" class="clear-items" id="clear-cart">
               <i class="fa-solid fa-trash-can"></i> Clear all items
             </a>
           </div>
@@ -322,7 +147,7 @@
               <h2 class="summary-title">
                 <i class="fa-solid fa-bag-shopping"></i> Order Summary
               </h2>
-              <p class="summary-items">4 items in your cart</p>
+              <p class="summary-items" id="summary-items">0 items in your cart</p>
             </div>
             <div class="summary-body">
               <!-- Free Shipping -->
@@ -338,7 +163,7 @@
               <!-- Subtotal -->
               <div class="summary-row">
                 <span class="label"> Subtotal </span>
-                <span class="value"> 1,994 EGP </span>
+                <span class="value" id="cart-subtotal"> 0 EGP </span>
               </div>
               <!-- Shipping -->
               <div class="summary-row shipping">
@@ -350,7 +175,7 @@
               <div class="grand-total">
                 <span class="label"> Total </span>
                 <div>
-                  <span class="amount"> 1,994 </span>
+                  <span class="amount" id="cart-grand-total"> 0 </span>
                   <span class="currency"> EGP </span>
                 </div>
               </div>
@@ -372,7 +197,7 @@
                 </span>
               </div>
               <!-- Continue -->
-              <a href="#" class="continue-shopping">
+              <a href="index.html" class="continue-shopping">
                 <i class="fa-solid fa-arrow-left"></i> Continue Shopping
               </a>
             </div>
@@ -518,5 +343,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/cart-storage.js"></script>
+    <script src="js/card.js"></script>
   </body>
 </html>

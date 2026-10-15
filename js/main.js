@@ -78,12 +78,26 @@ getCategories();
 const API_URL = "https://ecommerce.routemisr.com/api/v1/products";
 
 const productsContainer = document.getElementById("products-container");
+const sortFilter = document.getElementById("sort-filter");
+let allProducts = [];
 
 
-async function getProducts() {
+async function getProducts(sort = "") {
     try {
 
-        const response = await fetch(API_URL);
+        productsContainer.innerHTML = `
+            <div class="col-12 text-center py-5">
+                <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        `;
+
+        const url = sort
+            ? `${API_URL}?sort=${sort}`
+            : API_URL;
+
+        const response = await fetch(url);
 
         if (!response.ok) {
             throw new Error("Failed to fetch products");
@@ -92,6 +106,7 @@ async function getProducts() {
         const data = await response.json();
 
 
+        allProducts = data.data;
         displayProducts(data.data);
 
     } catch (error) {
@@ -202,7 +217,7 @@ function displayProducts(products) {
             <button
             type="button"
             class="btn btn-success rounded-circle  p-2 add-to-cart-btn"
-              
+            data-id="${product._id}"
             >
                 <i
                     class="fa-solid fa-plus bg-success rounded-circle text-white fa-canvas-roomy"
@@ -255,6 +270,26 @@ function createStars(rating) {
 
 // Start Application
 
+if (productsContainer) {
+    productsContainer.addEventListener("click", function (event) {
+        const button = event.target.closest(".add-to-cart-btn");
+
+        if (!button) {
+            return;
+        }
+
+        const product = allProducts.find((item) => item._id === button.dataset.id);
+
+        if (product) {
+            addProductToCart(product, 1);
+        }
+    });
+}
+
+if (sortFilter) {
+    sortFilter.addEventListener("change", function () {
+        getProducts(this.value);
+    });
+}
+
 getProducts();
-
-

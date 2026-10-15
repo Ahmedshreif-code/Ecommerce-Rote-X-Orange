@@ -1,6 +1,8 @@
 const productDetailsContainer =
     document.getElementById("product-details");
 
+let currentProduct = null;
+
 
 // Get Product ID From URL
 
@@ -38,8 +40,7 @@ async function getProductDetails() {
         const data = await response.json();
 
         const product = data.data;
-
-        console.log(product);
+        currentProduct = product;
 
         displayProduct(product);
 
@@ -273,7 +274,7 @@ function displayProduct(product) {
 
             <button
               class="btn btn-success"
-              onclick="addToCart('${product._id}')"
+              onclick="addToCart()"
             >
 
               <i class="fa-solid fa-cart-shopping"></i>
@@ -633,11 +634,12 @@ function displayRelatedProducts(products) {
 
 // Add To Cart
 
-function addToCart(productId) {
+function addToCart() {
+    if (!currentProduct) {
+        return;
+    }
 
-    console.log("Add product:", productId);
-
-
+    addProductToCart(currentProduct, currentQuantity);
 }
 
 
